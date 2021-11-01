@@ -1,6 +1,13 @@
 import { Meta } from "@storybook/react";
 import Avatar from "./Avatar";
-import AvatarDoc from "./AvatarDoc";
+import React from "react";
+import {
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Stories,
+} from "@storybook/addon-docs";
 
 export default {
   title: "Components/Avatar",
@@ -8,7 +15,26 @@ export default {
   parameters: {
     layout: "centered",
     docs: {
-      page: () => <AvatarDoc />,
+      page: () => (
+        <div>
+          <Title>Avatar</Title>
+          <Subtitle />
+          <Description>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </Description>
+          <div style={{ textAlign: "center" }}>
+            <Primary />
+          </div>
+        </div>
+      ),
     },
   },
 } as Meta;
