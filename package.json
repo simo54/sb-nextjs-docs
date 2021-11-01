@@ -6,8 +6,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "sb": "start-storybook -p 6006",
+    "build-sb": "build-storybook",
+    "sb-prvw-docs": "start-storybook --docs --no-manager-cache",
+    "build-sb-docs": "build-storybook --docs"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^0.1.1",
