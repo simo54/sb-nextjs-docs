@@ -2,7 +2,7 @@ import * as Avatar from "@radix-ui/react-avatar";
 
 const { Root, Image, Fallback } = Avatar;
 
-interface IAvatar {
+export interface IAvatar {
   src: string;
   alt: string;
 }
