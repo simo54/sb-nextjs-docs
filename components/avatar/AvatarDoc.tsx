@@ -9,7 +9,7 @@ import {
 
 export default function AvatarDoc() {
   return (
-    <div style={{ margin: "100px" }}>
+    <div>
       <Title>Avatar</Title>
       <Subtitle />
       <Description>
